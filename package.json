@@ -1,0 +1,64 @@
+{
+  "name": "graphize",
+  "version": "0.1.0",
+  "type": "module",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "./index.html",
+  "homepage": "https://ethylCNN.github.io/graphX",
+  "license": "MIT",
+  "author": {
+    "name": "Avijit Sen",
+    "url": "https://ethylCN.github.io/graphX"
+  },
+  "keywords": [
+    "visualizer",
+    "json",
+    "yaml",
+    "tree"
+  ],
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/ethylCN/graphX.git"
+  },
+  "scripts": {
+    "dev": "parcel",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build --no-source-maps --public-url= https://ethylCN.github.io/graphX/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.4.5",
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.9.0",
+    "monaco-editor": "0.31.0",
+    "react": "^18.2.0",
+    "react-contexify": "^5.0.0",
+    "react-dom": "^18.2.0",
+    "react-zoom-pan-pinch": "^2.1.3",
+    "reaflow": "^5.0.6",
+    "toastify-js": "^1.12.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.7.0",
+    "@parcel/compressor-gzip": "^2.7.0",
+    "@parcel/optimizer-esbuild": "^2.7.0",
+    "@parcel/packager-raw-url": "^2.7.0",
+    "@parcel/transformer-webmanifest": "^2.7.0",
+    "@types/downloadjs": "^1.4.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/toastify-js": "^1.11.1",
+    "@types/yamljs": "^0.2.31",
+    "autoprefixer": "^10.4.8",
+    "buffer": "^6.0.3",
+    "elkjs": "^0.8.1",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.14",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4"
+  }
+}
